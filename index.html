@@ -14,13 +14,19 @@
         <h1>The year of my Birth...</h1>
       </header>
       <main>
-        <form class="instructions" id="year-generator-form">
-          <label for="user-year">Enter your birth year:</label>
-          <input type="number" id="user-year" />
+        <div class="form-container">
+          <form class="instructions" id="year-generator-form">
+            <label for="user-year"></label>
+            <input
+              type="number"
+              id="user-year"
+              placeholder="Insert your birth year here!"
+            />
 
-          <button type="submit" class="submit-button">Let´s find out!</button>
-        </form>
-        <div class="answer" id="answer"></div>
+            <button type="submit" class="submit-button">Let´s find out!</button>
+          </form>
+          <div class="answer" id="answer"></div>
+        </div>
       </main>
       <footer>
         This AI project was coded by

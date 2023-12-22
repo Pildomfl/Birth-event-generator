@@ -9,6 +9,11 @@ a {
 .container {
   margin: 120px auto;
   max-width: 600px;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  border-radius: 10px;
+  margin-bottom: 50px;
 }
 header {
   margin-bottom: 30px;
@@ -20,13 +25,15 @@ h1 {
   line-height: 1.5;
   color: #272044;
 }
-form {
-  padding: 30px;
+.form-container {
   background-color: white;
-  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  margin-bottom: 40px;
   border-radius: 10px;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  padding: 15px 20px;
+}
+form {
   display: flex;
-  margin-bottom: 30px;
 }
 .instructions {
   padding: 16px;
@@ -38,7 +45,7 @@ form {
   color: #272044;
 }
 .submit-button {
-  margin-left: 10px;
+  margin-left: 18px;
   background: #885df1;
   color: white;
   border: none;
