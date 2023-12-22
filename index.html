@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Event Generator</title>
   </head>
@@ -13,7 +14,7 @@
       </header>
 
       <main>
-        <form>
+        <form id="year-generator-form">
           <input
             type="text"
             placeholder="Enter your birth year"
@@ -24,11 +25,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="answer">
-          The answer will go here
-          <br />
-          and here
-        </div>
+        <div class="answer" id="answer"></div>
       </main>
 
       <footer>
