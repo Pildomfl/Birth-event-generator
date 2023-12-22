@@ -10,7 +10,7 @@ a {
   margin: 120px auto;
   max-width: 600px;
   padding: 30px;
-  background-color: white;
+
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
   border-radius: 10px;
   margin-bottom: 50px;
@@ -26,7 +26,6 @@ h1 {
   color: #272044;
 }
 .form-container {
-  background-color: white;
   margin-bottom: 40px;
   border-radius: 10px;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
@@ -55,8 +54,9 @@ form {
   padding: 14px 24px;
 }
 .answer {
+  margin-top: 18px;
   font-size: 16px;
-  background-color: #fff;
+  background-color: #f9f7fe;
   padding: 20px;
   line-height: 2;
   border-left: 3px solid #885df1;
