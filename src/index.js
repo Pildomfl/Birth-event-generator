@@ -1,5 +1,4 @@
 function displayAnswer(response) {
-  console.log("answer generated");
   new Typewriter("#answer", {
     strings: response.data.answer,
     autoStart: true,
@@ -25,9 +24,6 @@ function generateYear(event) {
   answerElement.classList.remove("hidden");
   answerElement.innerHTML = `📖looking for the most incredible event of ${yearInput.value}`;
 
-  console.log("Generating answer");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
   axios.get(apiURL).then(displayAnswer);
 }
 let yearFormElement = document.querySelector("#year-generator-form");
