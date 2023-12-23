@@ -16,10 +16,14 @@ function generateYear(event) {
   let apiKey = "f060a71819e2tbf51f08f683o95b4c96";
   let prompt = `User instructions: Generate an event that happened in that year ${yearInput.value}`;
   let context =
-    "You are a history expert and love to write about history. Your mission is to generate a historical event of maximum 2 lines in basic HTML. Make sure to follow the user instructions";
+    "You are a history expert and love to write about history. Your mission is to generate a historical event of maximum 2 lines in basic HTML. Make sure to follow the user instructions and always start the answer with the words In that year. Sign the poem with 'SheCodes AI' inside a <strong> element at the end of the answer";
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${encodeURIComponent(
     prompt
   )}&context=${context}&key=${apiKey}`;
+
+  let answerElement = document.querySelector("#answer");
+  answerElement.classList.remove("hidden");
+  answerElement.innerHTML = `📖looking for the most incredible event of ${yearInput.value}`;
 
   console.log("Generating answer");
   console.log(`Prompt: ${prompt}`);

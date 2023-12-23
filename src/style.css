@@ -1,6 +1,6 @@
 body {
   background-color: #f9f7fe;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Junge", cursive;
 }
 a {
   color: #885df1;
@@ -34,6 +34,12 @@ h1 {
 form {
   display: flex;
 }
+.hint {
+  line-height: 1.5;
+  margin-top: 5px;
+  font-size: 12px;
+  opacity: 0.6;
+}
 .instructions {
   padding: 16px;
   border: 1px solid rgba(39, 33, 66, 0.5);
@@ -55,12 +61,19 @@ form {
 }
 .answer {
   margin-top: 18px;
+  background-color: white;
   font-size: 16px;
   background-color: #f9f7fe;
   padding: 20px;
   line-height: 2;
   border-left: 3px solid #885df1;
   box-shadow: 0px 20px 60px rgba(39, 33, 66, 0.03);
+}
+.hidden {
+  display: none;
+}
+.answer strong {
+  color: #885df1;
 }
 footer {
   text-align: center;
